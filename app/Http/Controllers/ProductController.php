@@ -15,6 +15,7 @@ class ProductController extends Controller
 
     public function webScraping()
     {
+        set_time_limit(600);
         $client = new Client();
         $baseUrl = 'http://books.toscrape.com/catalogue/page-';
         $pageNumber = 1;
