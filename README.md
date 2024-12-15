@@ -5,4 +5,3 @@
 3. Set up `.env` with database credentials.
 4. Run migrations: `php artisan migrate`
 6. Serve the application: `php artisan serve`
-7. PHP version 8.2.0
