@@ -19,7 +19,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 Total Product</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">₹ {{ $totalCount}}</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> {{ $totalCount}}</div>
                                         </div>
                                        
                                     </div>
@@ -118,14 +118,14 @@
                                             <thead>
                                                 <tr>
                                                     <th>Name</th>
-                                                    <th>Price</th>
+                                                    <th>Price (₹)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 @foreach($highestRatedProducts as $key=>$product)
                                                 <tr>
                                                     <td>{{ $product->name }}</td>
-                                                    <td>₹ {{ number_format($product->price,2) }}</td>
+                                                    <td>{{ number_format($product->price,2) }}</td>
                                                 </tr>
                                                 @endforeach
                                             </tbody>
@@ -144,14 +144,14 @@
                                             <thead>
                                                 <tr>
                                                     <th>Name</th>
-                                                    <th>Price</th>
+                                                    <th>Price (₹)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 @foreach($lowestRatedProducts as $key=>$product)
                                                 <tr>
                                                     <td>{{ $product->name }}</td>
-                                                    <td>₹ {{ number_format($product->price,2) }}</td>
+                                                    <td>{{ number_format($product->price,2) }}</td>
                                                 </tr>
                                                 @endforeach
                                             </tbody>
